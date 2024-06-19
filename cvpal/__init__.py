@@ -1,1 +1,1 @@
-from .cvpal import cvPal
+from .cvpal import CvPal
