@@ -50,7 +50,7 @@ Finds files that contain a certain label.
 - `exclusive` (bool): If True, finds files that contain only the specified label. Default is False.
 
 #### Returns:
-- `list`: A list of files containing the label.
+- `list`: A list of tubles containing both the image and its corresponding label file.
 
 ### `report`
 Creates a DataFrame that contains columns for image path, label, and label path.
