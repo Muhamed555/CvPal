@@ -1,6 +1,6 @@
 # CvPal
 
-`CvPal` is a versatile tool for handling and manipulating data, particularly designed for various formats such as text and COCO JSON, XML..etc, Below are the details of each method available in the `cvPal` class.
+`CvPal` is a versatile tool for handling and manipulating data, particularly designed for various formats such as text and COCO JSON, XML..etc, Below are the details of each method available in the `CvPal` class.
 
 ## Usage
 
