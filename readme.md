@@ -1,4 +1,4 @@
-<h1 align="center"><b>cvPal</b></h1>
+<h1 align="center"><b>CvPal</b></h1>
 <p align="center">
   <img src="assets/cvpal.png" alt="Image Description" style="border-radius: 30px;">
 </p>
@@ -13,11 +13,11 @@
 
 ## Introduction
 
-Welcome to **cvPal**!👋
+Welcome to **CvPal**!👋
 
-**cvPal** is a powerful Python package designed to assist Computer Vision engineers in performing a variety of image operations. The primary goal of **cvPal** is to simplify the process of image manipulation and dataset management, enabling engineers to focus on building and optimizing their machine learning pipelines.
+**CvPal** is a powerful Python package designed to assist Computer Vision engineers in performing a variety of image operations. The primary goal of **cvPal** is to simplify the process of image manipulation and dataset management, enabling engineers to focus on building and optimizing their machine learning pipelines.
 
-With **cvPal**, you can easily handle tasks such as merging datasets, removing specific labels, counting label occurrences, and generating comprehensive reports on your dataset, all with a user-friendly interface and comprehensive documentation.
+With **CvPal**, you can easily handle tasks such as merging datasets, removing specific labels, counting label occurrences, and generating comprehensive reports on your dataset, all with a user-friendly interface and comprehensive documentation.
 
 ## Features
 
@@ -31,7 +31,7 @@ With **cvPal**, you can easily handle tasks such as merging datasets, removing s
 
 ## Dataset Folder Structure
 
-To ensure **cvPal** works properly, the provided dataset folder should follow this structure:
+To ensure **CvPal** works properly, the provided dataset folder should follow this structure:
 
 - **folder/**
   - **train/**
@@ -70,24 +70,24 @@ val: Rock-Paper-Scissors-SXSW-14/valid/images
 
 ## Installation
 
-You can install **cvPal** via pip:
+You can install **CvPal** via pip:
 
 ```bash
-pip install cvPal
+pip install cvpal
 
 ```
 ## Example Usage
 
 ```bash
-from cvpal import cvPal
+from cvpal import CvPal
 
-data = cvPal()
+cp = CvPal()
 
 # Read data from the specified directory
-data.read_data("/content/Rock-Paper-Scissors-SXSW-14", data_type="txt")
+cp.read_data("/content/Rock-Paper-Scissors-SXSW-14", data_type="txt")
 
 # Generate a comprehensive report on the dataset
-data.report()
+cp.report()
 ```
 
 ## Supported Models and Formats
