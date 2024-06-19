@@ -89,5 +89,4 @@ print(files)
 # Generate report
 report_df = cv.report()
 print(report_df)
-=======
->>>>>>> parent of 46baae4 (Update the documentation)
+
