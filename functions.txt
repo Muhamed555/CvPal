@@ -1,0 +1,29 @@
+The first function
+
+1 - function will be called merge
+ Parameters
+    - a list contain multiple paths
+    - roboflow = True / False => This to create a yaml.file that will contain the paths and classes
+    - labels_type = json/txt/..
+
+2 - a function to delete a certain label called "delete_label"
+3 - a function to count the occurence of each label in the whole dataset so the engineer can know if there is a balance distribution of the labels so the model is not biased towards a certain label
+the function will be called "count_labels"
+4 -  function that will replace a label in the dataset (This function will recieve a ditionary that will contain the old value as the ket and the new value as the value)
+it will be called "replace_label".
+5 - Find files and images that contain a certain label:The following function finds the txt file that only contains a cerain label and store its path in a list
+it will be called "find_files_with_digit"
+6 - The following function finds any txt file that contains this label even if it has another labels in the same txt file
+7 - create a dataframe that contain 4 columns image/image_path/label/label_path
+8 - function to read the dataset it will recieve two parameters dataset path and type = txt, json, ...etc
+
+
+- A function called report it will recieve only the path of the dataset, it will get a complete report of the dataset which is a pandas dataframe contain
+1 - column1: image_path
+2 - column2: label_path
+3 - column3: num_of_labels
+4 - labels in the image (grouped in a list)
+
+
+Notes :
+You should keep in mind that some datasets won't have one of the foders train, test, valid

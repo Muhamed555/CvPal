@@ -1,0 +1,96 @@
+COCO (Common Objects in Context):
+
+Format: JSON
+Description: COCO format supports bounding boxes, segmentation masks, keypoints, and class labels. It is widely used in object detection and segmentation tasks.
+Example:
+json
+Copy code
+{
+  "images": [ ... ],
+  "annotations": [
+    {
+      "segmentation": [[x1, y1, x2, y2, ...]],
+      "area": 702.105,
+      "iscrowd": 0,
+      "image_id": 1,
+      "bbox": [x, y, width, height],
+      "category_id": 1,
+      "id": 1
+    },
+    ...
+  ],
+  "categories": [
+    {"id": 1, "name": "person", "supercategory": "person"},
+    ...
+  ]
+}
+PASCAL VOC:
+
+Format: XML
+Description: PASCAL VOC format is commonly used for bounding boxes and image classification. Each image has an associated XML file containing annotations.
+Example:
+xml
+Copy code
+<annotation>
+  <folder>VOC2007</folder>
+  <filename>000001.jpg</filename>
+  <object>
+    <name>dog</name>
+    <bndbox>
+      <xmin>48</xmin>
+      <ymin>240</ymin>
+      <xmax>195</xmax>
+      <ymax>371</ymax>
+    </bndbox>
+  </object>
+  ...
+</annotation>
+YOLO (You Only Look Once):
+
+Format: TXT
+Description: YOLO format uses a simple text file for each image, containing normalized bounding box coordinates and class labels.
+Example:
+arduino
+Copy code
+class_id center_x center_y width height
+0 0.5 0.5 0.25 0.25
+1 0.6 0.6 0.2 0.2
+LabelMe:
+
+Format: JSON
+Description: LabelMe format is used for polygonal annotations and is often used in image segmentation tasks.
+Example:
+json
+Copy code
+{
+  "imagePath": "example.jpg",
+  "shapes": [
+    {
+      "label": "cat",
+      "points": [[x1, y1], [x2, y2], ...]
+    },
+    ...
+  ]
+}
+KITTI:
+
+Format: TXT
+Description: KITTI format is used for 3D object detection and tracking. It contains annotations for 3D bounding boxes.
+Example:
+Copy code
+Car 0.00 0 -1.82 599.41 156.40 629.75 189.25 1.57 1.63 3.39 1.84 1.47 6.41 -0.21
+CSV:
+
+Format: CSV (Comma-Separated Values)
+Description: CSV files are used for various types of annotations, often for simpler tasks like image classification or bounding boxes.
+Example:
+arduino
+Copy code
+filename,width,height,class,xmin,ymin,xmax,ymax
+image1.jpg,1024,768,cat,100,200,400,600
+image2.jpg,1024,768,dog,150,250,450,650
+TFRecord (TensorFlow Record):
+
+Format: Protobuf (Protocol Buffers)
+Description: TFRecord is used for storing a sequence of binary records, often used with TensorFlow. It can store various annotation types including bounding boxes and segmentation masks.
+Example: A serialized format not easily readable in text but used efficiently with TensorFlow APIs.
