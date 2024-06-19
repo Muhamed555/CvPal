@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # cvPal
 
 `cvPal` is a versatile tool for handling and manipulating data, particularly designed for various formats such as text and COCO JSON, XML..etc, Below are the details of each method available in the `cvPal` class.
@@ -89,3 +90,5 @@ print(files)
 # Generate report
 report_df = cv.report()
 print(report_df)
+=======
+>>>>>>> parent of 46baae4 (Update the documentation)

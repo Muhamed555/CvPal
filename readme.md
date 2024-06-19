@@ -1,6 +1,15 @@
 <h1 align="center"><b>cvPal</b></h1>
+<p align="center">
+  <img src="assets/cvpal.png" alt="Image Description" style="border-radius: 30px;">
+</p>
 
----
+<div align="center">
+
+<div>
+    <br>
+    <a href="https://colab.research.google.com/drive/1Q_gYCQv85ImulAPXgQ1qOa_HGA7aytec?usp=sharing"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open Ultralytics In Colab"></a>
+</div>
+</div>
 
 ## Introduction
 
