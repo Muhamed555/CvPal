@@ -61,10 +61,10 @@ Creates a DataFrame that contains columns for image path, label, and label path.
 ## Example
 
 ```python
-from cvPal import cvPal
+from cvPal import CvPal
 
 # Initialize cvPal
-cv = cvPal()
+cv = CvPal()
 
 # Read data
 cv.read_data(path="path/to/data", data_type="txt")
