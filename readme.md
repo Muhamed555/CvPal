@@ -120,7 +120,7 @@ There are many other ways to contribute to zein besides writing code. You can al
 - Evaluate pull requests
 
 ## License
-See [LICENSE](LICENSE) file.
+See [LICENSE](LICENSE.txt) file.
 
  
  
