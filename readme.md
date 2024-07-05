@@ -92,21 +92,22 @@ cp.report()
 
 ## Supported Models and Formats
 | Model Name                             | Supported Format         | Support in Package       | Detection | Segmentation |
-|----------------------------------------|--------------------------|--------------------------|-----------|--------------|
-| YOLOv3                                 | Darknet TXT              | ❌                       | ❌        | ❌           |
-| YOLOv4                                 | Darknet TXT              | ❌                       | ❌        | ❌           |
-| YOLOv5                                 | TXT & YAML config        | ✅                       | ✅        | ❌           |
-| YOLOv7                                 | TXT & YAML config        | ✅                       | ✅        | ❌           |
-| YOLOv8                                 | TXT & YAML config        | ✅                       | ✅        | ❌           |
-| YOLOv9                                 | TXT & YAML config        | ✅                       | ✅        | ❌           |
-| EfficientDet                           | Pytorch JSON annotations | ❌                       | ❌        | ❌           |
-| Detectron 2                            | JSON annotations         | ❌                       | ❌        | ❌           |
-| Segmentation Models                    | XML format               | ❌                       | ❌        | ❌           |
-| Tensorflow 1.5 Object Detection models | Binary format            | ❌                       | ❌        | ❌           |
-| Tensorflow 2.0 Object Detection models | Binary format            | ❌                       | ❌        | ❌           |
-| Fine-tune PaliGemma                    | JSONL annotations        | ❌                       | ❌        | ❌           |
-| Apple's CreateML                       | Proprietary JSON format  | ❌                       | ❌        | ❌           |
-| Turi Create tools                      | Proprietary JSON format  | ❌                       | ❌        | ❌           |
+|----------------------------------------|--------------------------|--------------------------|-----------|------------|
+| YOLOv3                                 | Darknet TXT              | ❌                       | ❌        | ❌          |
+| YOLOv4                                 | Darknet TXT              | ❌                       | ❌        | ❌          |
+| YOLOv5                                 | TXT & YAML config        | ✅                       | ✅        | ✅          |
+| YOLOv7                                 | TXT & YAML config        | ✅                       | ✅        | ✅          |
+| YOLOv8                                 | TXT & YAML config        | ✅                       | ✅        | ✅          |
+| YOLOv9                                 | TXT & YAML config        | ✅                       | ✅        | ✅          |
+| YOLOv10                                | TXT & YAML config        | ✅                       | ✅        | ✅          |
+| EfficientDet                           | Pytorch JSON annotations | ❌                       | ❌        | ❌          |
+| Detectron 2                            | JSON annotations         | ❌                       | ❌        | ❌          |
+| Segmentation Models                    | XML format               | ❌                       | ❌        | ❌          |
+| Tensorflow 1.5 Object Detection models | Binary format            | ❌                       | ❌        | ❌          |
+| Tensorflow 2.0 Object Detection models | Binary format            | ❌                       | ❌        | ❌          |
+| Fine-tune PaliGemma                    | JSONL annotations        | ❌                       | ❌        | ❌          |
+| Apple's CreateML                       | Proprietary JSON format  | ❌                       | ❌        | ❌          |
+| Turi Create tools                      | Proprietary JSON format  | ❌                       | ❌        | ❌          |
 
 
 ## Call for Contributions
