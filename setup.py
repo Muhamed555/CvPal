@@ -126,7 +126,7 @@ There are many other ways to contribute to zein besides writing code. You can al
 
 # Setting up
 setup(
-    name="cvpal",
+    name="python-cvpal",
     version=VERSION,
     author="Mohamed E. Ibrahim",
     author_email="mohamedelsayed3487@gmail.com",
