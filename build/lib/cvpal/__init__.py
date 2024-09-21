@@ -1,1 +1,0 @@
-from .cvpal import CvPal

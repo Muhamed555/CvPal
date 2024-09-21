@@ -1,5 +1,0 @@
-pandas
-pyaml
-PyYAML
-python-dateutil
-numpy
