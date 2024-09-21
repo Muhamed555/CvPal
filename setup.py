@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 import codecs
 import os
 
-VERSION = '0.0.3'
+VERSION = '1.0.0'
 DESCRIPTION = 'A Python library for every Computer Vision Engineer'
 LONG_DESCRIPTION = """
 <h1 align="center"><b>CvPal</b></h1>
@@ -126,7 +126,7 @@ There are many other ways to contribute to zein besides writing code. You can al
 
 # Setting up
 setup(
-    name="python-cvpal",
+    name="cvpal",
     version=VERSION,
     author="Mohamed E. Ibrahim",
     author_email="mohamedelsayed3487@gmail.com",
