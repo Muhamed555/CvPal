@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 import codecs
 import os
 
-VERSION = '1.0.0'
+VERSION = '1.0.1'
 DESCRIPTION = 'A Python library for every Computer Vision Engineer'
 LONG_DESCRIPTION = """
 <h1 align="center"><b>CvPal</b></h1>
