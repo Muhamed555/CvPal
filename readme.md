@@ -1,53 +1,61 @@
-<h1 align="center"><b>CvPal</b></h1>
-<p align="center">
-  <img src="assets/cvpal.png" alt="Image Description" style="border-radius: 30px;">
-</p>
+# CvPal 🖼️
 
 <div align="center">
 
-<div>
-    <br>
-    <a href="https://colab.research.google.com/drive/1Q_gYCQv85ImulAPXgQ1qOa_HGA7aytec?usp=sharing"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open Ultralytics In Colab"></a>
+![CvPal Logo](assets/cvpal.png)
+
+[![PyPI version](https://badge.fury.io/py/cvpal.svg)](https://badge.fury.io/py/cvpal)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1Q_gYCQv85ImulAPXgQ1qOa_HGA7aytec?usp=sharing)
+
+[![Documentation](https://img.shields.io/badge/Documentation-📚-blue)](https://github.com/Muhamed555/CvPal/tree/main/documentation)
+
 </div>
-</div>
 
-## Introduction
+## 🌟 Introduction
 
-Welcome to **CvPal**!👋
+Welcome to **CvPal** - Your Ultimate Computer Vision Companion! 🚀
 
-**CvPal** is a powerful Python package designed to assist Computer Vision engineers in performing a variety of image operations. The primary goal of **cvPal** is to simplify the process of image manipulation and dataset management, enabling engineers to focus on building and optimizing their machine learning pipelines.
+**CvPal** is a cutting-edge Python package designed to empower Computer Vision engineers worldwide. Our mission is to streamline image operations and dataset management, allowing you to focus on what truly matters: building and optimizing your machine learning pipelines.
 
-With **CvPal**, you can easily handle tasks such as merging datasets, removing specific labels, counting label occurrences, and generating comprehensive reports on your dataset, all with a user-friendly interface and comprehensive documentation.
+🏆 **Proudly Sponsored by VisionFullSpace** 🏆
 
-## Features
+## 🎯 Features
 
-- **Dataset Merging**: Functions to seamlessly merge different datasets, each with multiple attributes.
-- **Label Removal**: Functions to remove specific labels from your dataset.
-- **Label Occurrence Counting**: Functions to count the occurrences of specific labels.
-- **Dataset Reporting**: Functions to generate comprehensive reports on your dataset.
-- **Easy Integration**: Seamlessly integrate with existing ML pipelines.
-- **Comprehensive Documentation**: Detailed documentation to guide you through all features and functionalities.
+- 🔄 **Dataset Merging**: Seamlessly combine datasets with multiple attributes
+- 🗑️ **Label Removal**: Effortlessly remove specific labels from your dataset
+- 📊 **Label Occurrence Counting**: Accurately track label frequencies
+- 📝 **Dataset Reporting**: Generate comprehensive reports on your dataset
+- 🔌 **Easy Integration**: Smoothly integrate with existing ML pipelines
+- 📚 **Comprehensive Documentation**: Detailed guides for all features
 
+## 🆕 Coming Soon: AI-Powered Dataset Creation
 
-## Dataset Folder Structure
+🎉 We're thrilled to announce our upcoming feature: Create entire datasets with just a prompt! Stay tuned for this game-changing addition to CvPal.
 
-To ensure **CvPal** works properly, the provided dataset folder should follow this structure:
+## 📁 Dataset Folder Structure
 
-- **folder/**
-  - **train/**
-    - **images/**
-    - **labels/**
-  - **test/**
-    - **images/**
-    - **labels/**
-  - **valid/**
-    - **images/**
-    - **labels/**
+For optimal performance, please structure your dataset folder as follows:
 
-Additionally, for datasets using TXT format, a `data.yaml` config file is required:
+```
+folder/
+├── train/
+│   ├── images/
+│   └── labels/
+├── test/
+│   ├── images/
+│   └── labels/
+└── valid/
+    ├── images/
+    └── labels/
+```
 
-- **folder/**
-  - `data.yaml`
+For TXT format datasets, include a `data.yaml` config file:
+
+```
+folder/
+└── data.yaml
+```
 
 Example `data.yaml`:
 
@@ -68,17 +76,17 @@ train: Rock-Paper-Scissors-SXSW-14/train/images
 val: Rock-Paper-Scissors-SXSW-14/valid/images
 ```
 
-## Installation
+## 🚀 Installation
 
-You can install **CvPal** via pip:
+Install CvPal with a simple pip command:
 
 ```bash
 pip install cvpal==0.0.2
-
 ```
-## Example Usage
 
-```bash
+## 🔧 Example Usage
+
+```python
 from cvpal import CvPal
 
 cp = CvPal()
@@ -90,37 +98,43 @@ cp.read_data("/content/Rock-Paper-Scissors-SXSW-14", data_type="txt")
 cp.report()
 ```
 
-## Supported Models and Formats
-| Model Name                             | Supported Format         | Support in Package       | Detection | Segmentation |
-|----------------------------------------|--------------------------|--------------------------|-----------|------------|
-| YOLOv3                                 | Darknet TXT              | ❌                       | ❌        | ❌          |
-| YOLOv4                                 | Darknet TXT              | ❌                       | ❌        | ❌          |
-| YOLOv5                                 | TXT & YAML config        | ✅                       | ✅        | ✅          |
-| YOLOv7                                 | TXT & YAML config        | ✅                       | ✅        | ✅          |
-| YOLOv8                                 | TXT & YAML config        | ✅                       | ✅        | ✅          |
-| YOLOv9                                 | TXT & YAML config        | ✅                       | ✅        | ✅          |
-| YOLOv10                                | TXT & YAML config        | ✅                       | ✅        | ✅          |
-| EfficientDet                           | Pytorch JSON annotations | ❌                       | ❌        | ❌          |
-| Detectron 2                            | JSON annotations         | ❌                       | ❌        | ❌          |
-| Segmentation Models                    | XML format               | ❌                       | ❌        | ❌          |
-| Tensorflow 1.5 Object Detection models | Binary format            | ❌                       | ❌        | ❌          |
-| Tensorflow 2.0 Object Detection models | Binary format            | ❌                       | ❌        | ❌          |
-| Fine-tune PaliGemma                    | JSONL annotations        | ❌                       | ❌        | ❌          |
-| Apple's CreateML                       | Proprietary JSON format  | ❌                       | ❌        | ❌          |
-| Turi Create tools                      | Proprietary JSON format  | ❌                       | ❌        | ❌          |
+## 📊 Supported Models and Formats
 
+| Model Name | Supported Format | Support in Package | Detection | Segmentation |
+|------------|------------------|---------------------|-----------|--------------|
+| YOLOv5-v10 | TXT & YAML config | ✅ | ✅ | ✅ |
+| YOLOv3-v4 | Darknet TXT | ❌ | ❌ | ❌ |
+| EfficientDet | Pytorch JSON annotations | ❌ | ❌ | ❌ |
+| Detectron 2 | JSON annotations | ❌ | ❌ | ❌ |
+| Segmentation Models | XML format | ❌ | ❌ | ❌ |
+| TensorFlow Object Detection | Binary format | ❌ | ❌ | ❌ |
+| Fine-tune PaliGemma | JSONL annotations | ❌ | ❌ | ❌ |
+| Apple's CreateML | Proprietary JSON format | ❌ | ❌ | ❌ |
+| Turi Create tools | Proprietary JSON format | ❌ | ❌ | ❌ |
 
-## Call for Contributions
-<p>We Need Your Help The cvPal project values your skills and passion!</p>
-<p>We appreciate any small enhancements or fixes you can make. If you want to make bigger changes to the source code, please let us know through the mailing list first.</p>
+## 🤝 Call for Contributions
 
-There are many other ways to contribute to zein besides writing code. You can also:
-- Help us manage new and old issues
-- Create tutorials, presentations, and other learning materials
-- Evaluate pull requests
+Join the CvPal community and make a global impact! We welcome contributions of all sizes:
 
-## License
-See [LICENSE](LICENSE.txt) file.
+- 🐛 Bug fixes and enhancements
+- 📝 Documentation improvements
+- 🎨 UI/UX enhancements
+- 🧪 New feature development
 
- 
- 
+To contribute major changes, please reach out through our mailing list first.
+
+Other ways to contribute:
+- 🔍 Help triage issues
+- 📚 Create tutorials and presentations
+- 🕵️ Review pull requests
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE.txt) file for details.
+
+---
+
+<div align="center">
+  <strong>Powered by VisionFullSpace</strong><br>
+  Empowering Computer Vision Worldwide
+</div>
