@@ -1,8 +1,7 @@
-from .txt_implementation_functions import *
-from .coco_json_implementation_functions import *
+from cvpal.preprocessing.different_format_utils.txt_implementation_functions import *
 
 
-class CvPal:
+class ImagesDetection:
     def __init__(self):
         self.path = None
         self.data_type = None
