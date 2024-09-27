@@ -1,1 +1,1 @@
-from cvpal.preprocessing import ImagesDetection
+from .cvpal import CvPal
